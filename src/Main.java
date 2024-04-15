@@ -49,10 +49,10 @@ public class Main {
      */
     private static String getScoresForWin(int scorePlayer1, int scorePlayer2) {
         String score;
-        int minusResult = scorePlayer1 - scorePlayer2;
-        if (minusResult == 1) score = "Advantage player1";
-        else if (minusResult == -1) score = "Advantage player2";
-        else if (minusResult >= 2) score = "Win for player1";
+        int scoreDifference = scorePlayer1 - scorePlayer2;
+        if (scoreDifference == 1) score = "Advantage player1";
+        else if (scoreDifference == -1) score = "Advantage player2";
+        else if (scoreDifference >= 2) score = "Win for player1";
         else score = "Win for player2";
         return score;
     }
