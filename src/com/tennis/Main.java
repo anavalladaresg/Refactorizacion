@@ -49,6 +49,9 @@ public class Main {
      * @return The tennis score name corresponding to the numeric value.
      */
     private static String getScoresForTie(int scorePlayer1) {
+        if (scorePlayer1 >= 4) {
+            return "Deuce";
+        }
         return SCORE_NAMES_FOR_TIE[scorePlayer1];
     }
 
