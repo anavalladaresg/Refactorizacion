@@ -17,22 +17,27 @@ public class Main {
                     score += "-";
                     tempScore = scorePlayer2;
                 }
-                switch (tempScore) {
-                    case 0:
-                        score += "Love";
-                        break;
-                    case 1:
-                        score += "Fifteen";
-                        break;
-                    case 2:
-                        score += "Thirty";
-                        break;
-                    case 3:
-                        score += "Forty";
-                        break;
-                }
+                score = namingScores(tempScore, score);
             }
 
+        }
+        return score;
+    }
+
+    private static String namingScores(int tempScore, String score) {
+        switch (tempScore) {
+            case 0:
+                score += "Love";
+                break;
+            case 1:
+                score += "Fifteen";
+                break;
+            case 2:
+                score += "Thirty";
+                break;
+            case 3:
+                score += "Forty";
+                break;
         }
         return score;
     }
