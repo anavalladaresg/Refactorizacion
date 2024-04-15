@@ -7,7 +7,15 @@ public class Main {
     private static final String WIN_FOR_PLAYER2 = "Win for player2";
 
     /**
-     * Method to return the tennis score
+     * This method calculates and returns the tennis score based on the numeric scores of two players.
+     * It handles three scenarios:
+     * 1. When the scores are tied.
+     * 2. When either player has a score of 4 or more.
+     * 3. All other cases when the scores are not tied.
+     *
+     * @param scorePlayer1 The numeric score of player 1.
+     * @param scorePlayer2 The numeric score of player 2.
+     * @return The tennis score as a string.
      */
     public static String getScore(int scorePlayer1, int scorePlayer2) {
         String score = "";
@@ -33,7 +41,7 @@ public class Main {
     }
 
     /**
-     * This method returns the tennis score name corresponding to the provided numeric value.
+     * This method returns the tennis score name when the scores of both players are tied.
      *
      * @param scorePlayer1 The numeric score of the player.
      * @return The tennis score name corresponding to the numeric value.
