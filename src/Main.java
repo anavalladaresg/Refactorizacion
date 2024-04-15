@@ -11,21 +11,13 @@ public class Main {
      */
     public static String getScore(int scorePlayer1, int scorePlayer2) {
         String score = "";
-        int tempScore = 0;
 
         if (scorePlayer1 == scorePlayer2) {
-            score = getScores(scorePlayer1);
+            score = getScoresForTie(scorePlayer1);
         } else if (scorePlayer1 >= 4 || scorePlayer2 >= 4) {
             score = getScoresForWin(scorePlayer1, scorePlayer2);
         } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) tempScore = scorePlayer1;
-                else {
-                    score += "-";
-                    tempScore = scorePlayer2;
-                }
-                score = namingScores(tempScore, score);
-            }
+            score = getScoresForNonTie(scorePlayer1, scorePlayer2);
         }
         return score;
     }
