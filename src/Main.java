@@ -30,27 +30,6 @@ public class Main {
     }
 
     /**
-     * Method to name the scores
-     */
-    private static String namingScores(int tempScore, String score) {
-        switch (tempScore) {
-            case 0:
-                score += "Love";
-                break;
-            case 1:
-                score += "Fifteen";
-                break;
-            case 2:
-                score += "Thirty";
-                break;
-            case 3:
-                score += "Forty";
-                break;
-        }
-        return score;
-    }
-
-    /**
      * Method to get scores for win
      */
     private static String getScoresForWin(int scorePlayer1, int scorePlayer2) {
