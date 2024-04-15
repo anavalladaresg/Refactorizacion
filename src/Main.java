@@ -1,6 +1,6 @@
 public class Main {
     /**
-     * metodo para devolver la puntuacion de tenis
+     * Method to return the tennis score
      */
     public static String getScore(int scorePlayer1, int scorePlayer2) {
         String score = "";
@@ -19,11 +19,13 @@ public class Main {
                 }
                 score = namingScores(tempScore, score);
             }
-
         }
         return score;
     }
 
+    /**
+     * Method to name the scores
+     */
     private static String namingScores(int tempScore, String score) {
         switch (tempScore) {
             case 0:
@@ -42,6 +44,9 @@ public class Main {
         return score;
     }
 
+    /**
+     * Method to get scores for win
+     */
     private static String getScoresForWin(int scorePlayer1, int scorePlayer2) {
         String score;
         int minusResult = scorePlayer1 - scorePlayer2;
@@ -52,6 +57,9 @@ public class Main {
         return score;
     }
 
+    /**
+     * Method to get scores
+     */
     private static String getScores(int scorePlayer1) {
         String score;
         switch (scorePlayer1) {
