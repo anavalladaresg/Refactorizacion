@@ -65,4 +65,14 @@ public class Main {
         else return WIN_FOR_PLAYER2;
     }
 
+    /**
+     * This method returns the tennis score names for both players when their scores are not tied.
+     *
+     * @param scorePlayer1 The numeric score of player 1.
+     * @param scorePlayer2 The numeric score of player 2.
+     * @return The tennis score names for both players separated by a dash.
+     */
+    private static String getScoresForNonTie(int scorePlayer1, int scorePlayer2) {
+        return namingScores(scorePlayer1) + "-" + namingScores(scorePlayer2);
+    }
 }
