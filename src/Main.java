@@ -41,6 +41,15 @@ public class Main {
     }
 
     /**
+     * This method returns the tennis score name corresponding to the provided numeric value.
+     * @param scorePlayer1 The numeric score of the player.
+     * @return The tennis score name corresponding to the numeric value.
+     */
+    private static String getScoresForTie(int scorePlayer1) {
+        return SCORE_NAMES_FOR_TIE[scorePlayer1];
+    }
+
+    /**
      * Method to get scores for win
      */
     private static String getScoresForWin(int scorePlayer1, int scorePlayer2) {
