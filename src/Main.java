@@ -1,4 +1,10 @@
 public class Main {
+    private static final String[] SCORE_NAMES = {"Love", "Fifteen", "Thirty", "Forty"};
+    private static final String[] SCORE_NAMES_FOR_TIE = {"Love-All", "Fifteen-All", "Thirty-All", "Deuce"};
+    private static final String ADVANTAGE_PLAYER1 = "Advantage player1";
+    private static final String ADVANTAGE_PLAYER2 = "Advantage player2";
+    private static final String WIN_FOR_PLAYER1 = "Win for player1";
+    private static final String WIN_FOR_PLAYER2 = "Win for player2";
     /**
      * Method to return the tennis score
      */
