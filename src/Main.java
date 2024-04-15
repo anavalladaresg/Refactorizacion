@@ -5,6 +5,7 @@ public class Main {
     private static final String ADVANTAGE_PLAYER2 = "Advantage player2";
     private static final String WIN_FOR_PLAYER1 = "Win for player1";
     private static final String WIN_FOR_PLAYER2 = "Win for player2";
+
     /**
      * Method to return the tennis score
      */
@@ -27,6 +28,16 @@ public class Main {
             }
         }
         return score;
+    }
+
+    /**
+     * This method returns the tennis score name corresponding to the provided numeric value.
+     *
+     * @param tempScore The numeric score of the player.
+     * @return The tennis score name corresponding to the numeric value.
+     */
+    private static String namingScores(int tempScore) {
+        return SCORE_NAMES[tempScore];
     }
 
     /**
