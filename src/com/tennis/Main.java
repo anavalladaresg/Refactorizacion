@@ -1,3 +1,5 @@
+package com.tennis;
+
 public class Main {
     private static final String[] SCORE_NAMES = {"Love", "Fifteen", "Thirty", "Forty"};
     private static final String[] SCORE_NAMES_FOR_TIE = {"Love-All", "Fifteen-All", "Thirty-All", "Deuce"};
