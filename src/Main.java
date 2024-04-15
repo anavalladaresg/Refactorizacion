@@ -41,29 +41,4 @@ public class Main {
         else score = "Win for player2";
         return score;
     }
-
-    /**
-     * Method to get scores
-     */
-    private static String getScores(int scorePlayer1) {
-        String score;
-        switch (scorePlayer1) {
-            case 0:
-                score = "Love-All";
-                break;
-            case 1:
-                score = "Fifteen-All";
-                break;
-            case 2:
-                score = "Thirty-All";
-                break;
-            case 3:
-                score = "Forty-All";
-                break;
-            default:
-                score = "Deuce";
-                break;
-        }
-        return score;
-    }
 }
